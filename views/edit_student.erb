@@ -1,0 +1,23 @@
+<h1 class="text-center">Student Information</h1>
+
+<dl class="row">
+  <dt class="col-md-6 col-md-10">Student Name</dt>
+  <dd class="col-md-6 col-md-2 h5"><%= @students.fname %></dd>
+  <dt class="col-md-6 col-md-10">Last Name</dt>
+  <dd class="col-md-6 col-md-2 h5"><%= @students.lname %></dd>
+  <dt class="col-md-6 col-md-10">Student ID</dt>
+  <dd class="col-md-6 col-md-2 h5"><%= @students.id %></dd>
+  <dt class="col-md-6 col-md-10">Birthday</dt>
+  <dd class="col-md-6 col-md-2 h5"><%= @students.birthday %></dd>  
+  <dt class="col-md-6 col-md-10">Address</dt>
+  <dd class="col-md-6 col-md-2 h5"><%= @students.address %></dd>
+  <dt class="col-md-6 col-md-10">Email</dt>
+  <dd class="col-md-6 col-md-2 h5"><%= @students.emailId %></dd>
+  <dt class="col-md-6 col-md-10">Created At</dt>
+  <dd class="col-md-6 col-md-2 h5"><%= @students.created_at %></dd>
+</dl>
+
+
+<form action="/students" method="POST">
+	<%= erb :student_form %>
+</form>

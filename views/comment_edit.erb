@@ -1,0 +1,15 @@
+<h1 class="text-center">Edit Comment</h1>
+
+<dl class="row">
+	  <dt class="col-md-6 col-md-10">Student Name</dt>
+	  <dd class="col-md-6 col-md-2 h5"><%= @comment.name %></dd>
+	  <dt class="col-md-6 col-md-10">Comment ID</dt>
+	  <dd class="col-md-6 col-md-2 h5"><%= @comment.commid %></dd>
+	   <dt class="col-md-6 col-md-10">Comment</dt>
+	  <dd class="col-md-6 col-md-2 h5"><%= @comment.com%></dd>
+	  <dt class="col-md-6 col-md-10">Created At</dt>
+	  <dd class="col-md-6 col-md-2 h5"><%= @comment.created_at %></dd>
+</dl>
+<form method="POST" action="/comments/<%= @comment.comid %>">
+  <%= erb :comment_form %>
+</form>

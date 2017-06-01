@@ -1,0 +1,15 @@
+
+<h1>All Students</h1>
+
+<button class="btn btn-primary btn-block center-block btn-md" onclick="location.href='/students/new'">Add New Student</button>
+<div class="list-group">
+<% @students.each do |student| %>
+
+  <a class="list-group-item" href="/students/<%= student.id %>">
+  	<h4 class="list-group-item-heading">Name: <%= student.fname%> </h4>
+    <p class="list-group-item-text">ID: <%= student.id %></p>
+  </a>
+  
+<% end %>
+</div>
+<h2><%=@size %></h2>

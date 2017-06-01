@@ -1,0 +1,21 @@
+
+<h2>Welcome <%=@student.fname %>!</h2>
+<dl class="row">
+  <dt class="col-md-6 col-md-10">Student Name</dt>
+  <dd class="col-md-6 col-md-2 h5"><%= @student.fname %></dd>
+  <dt class="col-md-6 col-md-10">Last Name</dt>
+  <dd class="col-md-6 col-md-2 h5"><%= @student.lname %></dd>
+  <dt class="col-md-6 col-md-10">Student ID</dt>
+  <dd class="col-md-6 col-md-2 h5"><%= @student.id %></dd>
+  <dt class="col-md-6 col-md-10">Birthday</dt>
+  <dd class="col-md-6 col-md-2 h5"><%= @student.birthday %></dd>  
+  <dt class="col-md-6 col-md-10">Address</dt>
+  <dd class="col-md-6 col-md-2 h5"><%= @student.address %></dd>
+  <dt class="col-md-6 col-md-10">Email</dt>
+  <dd class="col-md-6 col-md-2 h5"><%= @student.emailId %></dd>
+  <dt class="col-md-6 col-md-10">Created At</dt>
+  <dd class="col-md-6 col-md-2 h5"><%= @student.created_at.strftime("%I:%M%p") %></dd>
+</dl>
+<button class="btn btn-primary btn-block btn-md" onclick="location.href='/students/<%= @student.id %>/edit'">Edit</button>
+<form action="/students" method="delete">
+<button class="btn btn-danger btn-block btn-md">Delete</button></form>

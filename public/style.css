@@ -1,0 +1,22 @@
+body {
+  font: 100% Helvetica, sans-serif;
+  font-size: 20px; }
+
+h1 {
+  color: #333; }
+
+p {
+  color: #333; }
+
+nav ul {
+  margin: 0;
+  padding: 0;
+  list-style: none; }
+nav li {
+  display: inline-block; }
+nav a {
+  display: block;
+  padding: 3px 6px;
+  text-decoration: none; }
+
+/*# sourceMappingURL=style.css.map */

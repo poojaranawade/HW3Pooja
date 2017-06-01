@@ -1,0 +1,16 @@
+<h1>Comment</h1>
+<h2>Showing Comment<%=@comment.comid %>:</h2>
+<form method="post" action="/comments/<%= @comment.comid %>">
+    <input type="hidden" name="_method" value="DELETE" >
+	<dl class="row">
+	  <dt class="col-md-6 col-md-10">Student Name</dt>
+	  <dd class="col-md-6 col-md-2 h5"><%= @comment.name %></dd>
+	  <dt class="col-md-6 col-md-10">Comment ID</dt>
+	  <dd class="col-md-6 col-md-2 h5"><%= @comment.comid %></dd>
+	   <dt class="col-md-6 col-md-10">Comment</dt>
+	  <dd class="col-md-6 col-md-2 h5"><%= @comment.com%></dd>
+	  <dt class="col-md-6 col-md-10">Created At</dt>
+	  <dd class="col-md-6 col-md-2 h5"><%= @comment.created_at %></dd>
+	</dl>
+	<button class="btn btn-danger btn-block btn-md deleteButton" value="delete the student">Delete</button>
+</form>

@@ -1,0 +1,12 @@
+<h1>Comments</h1>
+<button class="btn btn-primary btn-block center-block btn-md" onclick="location.href='/comments/new'">Add New Comment</button>
+<div class="list-group">
+<% @comments.each do |comment| %>
+
+  <a class="list-group-item" href="/comments/<%= comment.comid %>">
+  	<h4 class="list-group-item-heading">Name: <%= comment.name%> </h4>
+    <p class="list-group-item-text">Comment ID: <%= comment.comid%></p>
+  </a>
+  
+<% end %>
+</div>
