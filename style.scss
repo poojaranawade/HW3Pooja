@@ -1,0 +1,45 @@
+$primary_color: #333;
+$font-stack:Helvetica, sans-serif;
+$p-font-sizes: 20px;
+
+
+body {
+  font: 100% $font-stack;
+  font-size: $p-font-sizes;
+  }
+
+h1{
+	color:$primary_color;
+}
+
+p{
+	color:$primary_color;
+}
+
+nav {
+  ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+
+  li { display: inline-block; }
+
+  a {
+    display: block;
+    padding: 3px 6px;
+    text-decoration: none;
+  }
+}
+@mixin hide-text() {
+  font: 0/0 a;
+  color: transparent;
+  text-shadow: none;
+  background-color: transparent;
+  border: 0;
+}
+
+// New mixin to use as of v3.0.1
+@mixin text-hide() {
+  @include hide-text;
+}
